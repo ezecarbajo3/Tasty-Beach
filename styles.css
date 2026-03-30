@@ -94,8 +94,8 @@ body {
 /* BUTTON */
 
 .btn {
-  background: var(--gold);
-  color: #2d1a12;
+  background: var(--primary);
+  color: white;
   padding: 14px 24px;
   border-radius: 999px;
   display: inline-block;
