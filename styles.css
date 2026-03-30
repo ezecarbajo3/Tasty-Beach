@@ -3,7 +3,6 @@
   --text: #1a1a1a;
   --muted: #6b6b6b;
   --primary: #ff5a1f;
-  --primary-soft: #fff1eb;
   --border: rgba(0,0,0,0.08);
 }
 
@@ -23,7 +22,7 @@ body {
   top: 16px;
   left: 50%;
   transform: translateX(-50%);
-  width: min(calc(100% - 48px), var(--container));
+  width: min(calc(100% - 48px), 1200px);
   z-index: 100;
   display: flex;
   align-items: center;
@@ -36,6 +35,14 @@ body {
   backdrop-filter: blur(12px);
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 56px;
+}
+
 .nav-links a {
   font-size: 1.25rem;
   font-weight: 700;
@@ -44,15 +51,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #ff5a1f; /* naranja branding */
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  gap: 56px; /* 🔥 esto es lo que da el look premium */
+  color: var(--primary);
 }
 
 /* HERO */
@@ -100,11 +99,39 @@ body {
   box-shadow: 0 10px 20px rgba(255,90,31,0.3);
 }
 
-/* SECTION */
+/* SECTION BASE */
 
 .section {
   padding: 100px 20px;
 }
+
+/* 🔥 BLANCO */
+
+.section:nth-of-type(odd) {
+  background: white;
+  color: #1a1a1a;
+}
+
+/* 🔥 NARANJA */
+
+.section:nth-of-type(even) {
+  background: var(--primary);
+  color: white;
+}
+
+/* TEXTO EN SECCIONES NARANJA */
+
+.section:nth-of-type(even) p,
+.section:nth-of-type(even) h2,
+.section:nth-of-type(even) h3 {
+  color: white;
+}
+
+.section:nth-of-type(even) p {
+  opacity: 0.9;
+}
+
+/* CONTAINER */
 
 .container {
   max-width: 1100px;
@@ -118,6 +145,14 @@ body {
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* 🔥 CARDS EN SECCIÓN NARANJA */
+
+.section:nth-of-type(even) .card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
 }
 
 /* GRID */
@@ -141,12 +176,16 @@ body {
 
 .review {
   font-style: italic;
-  color: var(--muted);
 }
 
 .stars {
   color: var(--primary);
-  margin-bottom: 10px;
+}
+
+/* 🔥 ESTRELLAS EN FONDO NARANJA */
+
+.section:nth-of-type(even) .stars {
+  color: white;
 }
 
 /* LOCATION */
@@ -158,7 +197,7 @@ iframe {
   margin-top: 20px;
 }
 
-/* SECTION TITLES */
+/* TITLES */
 
 h2 {
   font-size: 2.5rem;
@@ -191,8 +230,6 @@ h2 {
 .gallery img:hover {
   transform: scale(1.05);
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 900px) {
   .gallery-container {
