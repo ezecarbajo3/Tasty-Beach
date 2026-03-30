@@ -1,14 +1,11 @@
 :root {
-  --bg: #6f4c3e;
-  --bg-deep: #5f4035;
-  --surface: rgba(37, 21, 16, 0.42);
-  --border: rgba(255, 240, 225, 0.12);
-  --text: #f7f0e8;
-  --muted: #eadcca;
-  --gold: #d9ba7a;
-  --gold-strong: #e6c98f;
-  --radius: 28px;
-  --container: 1240px;
+  --bg: #ffffff;
+  --surface: #fff7f2;
+  --border: rgba(0,0,0,0.08);
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+  --primary: #ff5a1f;        /* naranja principal */
+  --primary-soft: #ffede6;
 }
 
 * { box-sizing: border-box; }
