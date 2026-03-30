@@ -47,6 +47,14 @@ body {
   color: #ff5a1f; /* naranja branding */
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 56px; /* 🔥 esto es lo que da el look premium */
+}
+
 /* HERO */
 
 .hero {
