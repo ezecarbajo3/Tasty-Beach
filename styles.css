@@ -14,7 +14,7 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
   color: var(--text);
-  background: linear-gradient(rgba(111,76,62,0.92), rgba(95,64,53,0.95));
+  background: var(--bg);
 }
 
 .container {
