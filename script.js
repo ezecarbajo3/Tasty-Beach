@@ -1,50 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
-  const revealElements = document.querySelectorAll(".reveal, .reveal-left, .reveal-right");
-  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const links = document.querySelectorAll('a[href^="#"]');
 
-  navLinks.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      const targetId = link.getAttribute("href");
-      if (!targetId) return;
+  links.forEach(link => {
+    link.addEventListener("click", e => {
+      const target = document.querySelector(link.getAttribute("href"));
+      if (!target) return;
 
-      const targetSection = document.querySelector(targetId);
-      if (!targetSection) return;
+      e.preventDefault();
 
-      event.preventDefault();
-
-      targetSection.scrollIntoView({
-        behavior: prefersReducedMotion ? "auto" : "smooth",
-        block: "start"
+      target.scrollIntoView({
+        behavior: "smooth"
       });
     });
-  });
-
-  if (!revealElements.length) return;
-
-  if (prefersReducedMotion) {
-    revealElements.forEach((element) => {
-      element.classList.add("is-visible");
-    });
-    return;
-  }
-
-  const observer = new IntersectionObserver(
-    (entries, obs) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-
-        entry.target.classList.add("is-visible");
-        obs.unobserve(entry.target);
-      });
-    },
-    {
-      threshold: 0.15,
-      rootMargin: "0px 0px -8% 0px"
-    }
-  );
-
-  revealElements.forEach((element) => {
-    observer.observe(element);
   });
 });
