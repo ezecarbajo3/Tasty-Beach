@@ -33,8 +33,9 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 18px;
-  background: rgba(30,17,13,0.7);
-  border-radius: 999px;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(10px);
 }
 
 .brand-text span {
