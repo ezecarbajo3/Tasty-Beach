@@ -23,16 +23,17 @@ body {
   top: 16px;
   left: 50%;
   transform: translateX(-50%);
-  width: min(95%, 1200px);
+  width: min(calc(100% - 48px), var(--container));
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 24px;
-  background: rgba(255,255,255,0.85);
+  gap: 24px;
+  padding: 18px 22px;
+  background: rgba(30, 17, 13, 0.65);
+  border: 1px solid var(--border);
   border-radius: 999px;
   backdrop-filter: blur(12px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-  z-index: 1000;
 }
 
 .nav-links a {
