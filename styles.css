@@ -295,6 +295,7 @@ a {
   font-size: clamp(4rem, 10vw, 7.6rem);
   text-shadow: none !important;
   color: #3a312c;
+  margin-top: 6px;
 }
 
 .hero-content h2 {
