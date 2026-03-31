@@ -97,13 +97,13 @@ a {
   min-height: auto;
   padding-top: 126px;
   background:
-    linear-gradient(rgba(251, 246, 236, 0.96), rgba(245, 238, 226, 0.98)),
+    linear-gradient(rgba(232, 224, 212, 0.96), rgba(226, 216, 202, 0.98)),
     repeating-linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0.20) 0px,
-      rgba(255, 255, 255, 0.20) 2px,
-      rgba(230, 216, 196, 0.14) 2px,
-      rgba(230, 216, 196, 0.14) 10px
+      rgba(255, 255, 255, 0.16) 0px,
+      rgba(255, 255, 255, 0.16) 2px,
+      rgba(214, 198, 176, 0.16) 2px,
+      rgba(214, 198, 176, 0.16) 10px
     );
 }
 
