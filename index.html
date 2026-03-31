@@ -5,16 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tasty Beach Cafe</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <header class="hero" id="home">
-
   <nav class="navbar">
-
     <a href="#home" class="brand">
       <div class="brand-mark">TB</div>
       <div class="brand-text">
@@ -29,155 +27,256 @@
       <a href="#location">Location</a>
       <a href="#contact">Contact</a>
     </div>
-
   </nav>
 
-  <div>
-
+  <div class="hero-content">
     <div class="hero-logo">
-      <img src="logomejorado.png" alt="logo">
+      <img src="logomejorado.png" alt="Tasty Beach Cafe logo">
     </div>
 
-    <p>Coffee, brunch & good energy in Miami Beach</p>
+    <div class="hero-badges">
+      <span class="hero-badge">☕ Coffee Bar</span>
+      <span class="hero-badge">🥐 Baked Goods</span>
+      <span class="hero-badge">🌴 Miami Beach</span>
+    </div>
 
+    <p class="hero-subtitle">Coffee, brunch & good energy in Miami Beach</p>
+
+    <div class="hero-quick-info">
+      <div class="quick-info-item">
+        <span class="quick-info-icon">⭐</span>
+        <span>4.1 rating</span>
+      </div>
+      <div class="quick-info-item">
+        <span class="quick-info-icon">🕘</span>
+        <span>Open 8:00 AM – 3:00 PM</span>
+      </div>
+      <div class="quick-info-item">
+        <span class="quick-info-icon">📍</span>
+        <span>4041 Royal Palm Ave</span>
+      </div>
+    </div>
   </div>
-
 </header>
 
 <main>
 
 <section id="about" class="section">
   <div class="container">
-    <div class="card">
-
+    <div class="section-heading">
+      <span class="section-kicker">Our Story</span>
       <h2>About Us</h2>
+    </div>
 
-      <p>
-At Tasty Beach Cafe, our story is one of community and flavor, nestled in the vibrant heart of Miami Beach. We pride ourselves on creating a warm, inclusive atmosphere where everyone feels welcome. Our menu offers a delightful blend of comfort and health, featuring everything from decadent pancakes to wholesome vegan options. Guests rave about our unique dishes, like the Cinnamon Toast Crunch French Toast and hearty spinach wraps. With cozy outdoor seating and a dedicated coffee bar, we are your go-to spot for breakfast, brunch, or a quick bite. Join us for a memorable experience that celebrates food and friendship!
-      </p>
+    <div class="card about-card">
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            At Tasty Beach Cafe, our story is one of community and flavor, nestled in the vibrant heart of Miami Beach. We pride ourselves on creating a warm, inclusive atmosphere where everyone feels welcome.
+          </p>
+          <p>
+            Our menu offers a delightful blend of comfort and health, featuring everything from decadent pancakes to wholesome vegan options. Guests rave about our unique dishes, like the Cinnamon Toast Crunch French Toast and hearty spinach wraps.
+          </p>
+          <p>
+            With cozy outdoor seating and a dedicated coffee bar, we are your go-to spot for breakfast, brunch, or a quick bite. Join us for a memorable experience that celebrates food and friendship.
+          </p>
+        </div>
+
+        <div class="about-highlights">
+          <div class="about-pill">☀️ Warm atmosphere</div>
+          <div class="about-pill">🥗 Healthy options</div>
+          <div class="about-pill">🥞 Signature breakfast</div>
+          <div class="about-pill">☕ Dedicated coffee bar</div>
+          <div class="about-pill">🌿 Vegan-friendly</div>
+          <div class="about-pill">🪑 Outdoor seating</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="menu" class="section">
   <div class="container">
+    <div class="section-heading">
+      <span class="section-kicker">Favorites</span>
+      <h2>Menu Highlights</h2>
+    </div>
 
-    <h2>Menu Highlights</h2>
-
-    <!-- 🔥 IMÁGENES ARRIBA -->
     <div class="gallery">
       <div class="gallery-container">
-        <img src="tasty1.png" alt="food 1">
-        <img src="tasty2.png" alt="food 2">
-        <img src="tasty3.png" alt="food 3">
+        <figure class="gallery-item">
+          <img src="tasty1.png" alt="Signature breakfast plate at Tasty Beach Cafe">
+          <figcaption>Breakfast</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="tasty2.png" alt="Fresh fruit drink at Tasty Beach Cafe">
+          <figcaption>Drinks</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="tasty3.png" alt="Fresh baked pastries at Tasty Beach Cafe">
+          <figcaption>Bakery</figcaption>
+        </figure>
       </div>
     </div>
 
-    <!-- 🔥 CARDS ABAJO -->
-    <div class="grid grid-3">
-
-      <div class="card">
+    <div class="grid grid-3 menu-grid">
+      <div class="card menu-card">
+        <div class="menu-card-icon">🥞</div>
         <h3>Breakfast</h3>
         <p>Cinnamon Toast Crunch French Toast</p>
         <p>Pancakes</p>
       </div>
 
-      <div class="card">
+      <div class="card menu-card">
+        <div class="menu-card-icon">🥗</div>
         <h3>Healthy</h3>
         <p>Spinach Wraps</p>
         <p>Vegan Options</p>
       </div>
 
-      <div class="card">
+      <div class="card menu-card">
+        <div class="menu-card-icon">☕</div>
         <h3>Coffee & Bakery</h3>
         <p>Fresh Coffee Bar</p>
         <p>Baked Goods</p>
       </div>
-
     </div>
 
-    <div style="text-align:center; margin-top:40px;">
-      <a href="menu.pdf" target="_blank" class="btn">
-        Full Menu
-      </a>
+    <div class="menu-cta">
+      <a href="menu.pdf" target="_blank" class="btn">Full Menu</a>
     </div>
-
   </div>
 </section>
 
 <section id="reviews" class="section">
   <div class="container">
+    <div class="section-heading">
+      <span class="section-kicker">Guest Love</span>
+      <h2>Reviews</h2>
+    </div>
 
-    <h2>Reviews</h2>
-
-    <div class="grid grid-3">
-
-      <div class="card">
-        <div class="stars">★★★★★</div>
+    <div class="grid grid-3 reviews-grid">
+      <div class="card review-card">
+        <div class="review-top">
+          <div class="stars">★★★★★</div>
+          <span class="review-badge">Guest Favorite</span>
+        </div>
         <p class="review">
           "They were incredibly patient and supportive. The best breakfast I've had in Miami."
         </p>
         <strong>Arlene Benitez</strong>
       </div>
 
-      <div class="card">
-        <div class="stars">★★★★★</div>
+      <div class="card review-card">
+        <div class="review-top">
+          <div class="stars">★★★★★</div>
+          <span class="review-badge">Fast Service</span>
+        </div>
         <p class="review">
           "Food came fast, service was phenomenal and friendly. Highly recommended."
         </p>
         <strong>A M</strong>
       </div>
 
-      <div class="card">
-        <div class="stars">★★★★★</div>
+      <div class="card review-card">
+        <div class="review-top">
+          <div class="stars">★★★★★</div>
+          <span class="review-badge">Top Choice</span>
+        </div>
         <p class="review">
           "Amazing food, great portions and top notch service. We came back multiple times."
         </p>
         <strong>Aaron O</strong>
       </div>
-
     </div>
-
   </div>
 </section>
 
 <section id="location" class="section">
   <div class="container">
-
-    <div class="card">
-
+    <div class="section-heading">
+      <span class="section-kicker">Visit Us</span>
       <h2>Location</h2>
-
-      <p>4041 Royal Palm Ave, Miami Beach, FL</p>
-      <p>+1 305-673-5483</p>
-
-      <p>
-        Open 8:00 AM – 3:00 PM (Monday to Friday & Sunday)  
-        Saturday: Closed
-      </p>
-
-      <div class="hero-actions">
-
-        <a href="https://maps.google.com/?q=4041+Royal+Palm+Ave,+Miami+Beach" target="_blank" class="btn">
-          Open in Maps
-        </a>
-
-        <a href="tel:+13056735483" class="btn btn-outline">
-          Call Now
-        </a>
-
-      </div>
-
-      <iframe src="https://www.google.com/maps?q=4041+Royal+Palm+Ave,+Miami+Beach,+FL&output=embed"></iframe>
-
     </div>
 
+    <div class="card location-card">
+      <div class="location-info-grid">
+        <div class="location-copy">
+          <div class="info-row">
+            <span class="info-icon">📍</span>
+            <span>4041 Royal Palm Ave, Miami Beach, FL</span>
+          </div>
+
+          <div class="info-row">
+            <span class="info-icon">📞</span>
+            <span>+1 305-673-5483</span>
+          </div>
+
+          <div class="info-row">
+            <span class="info-icon">🕘</span>
+            <span>Open 8:00 AM – 3:00 PM (Monday to Friday & Sunday) · Saturday: Closed</span>
+          </div>
+
+          <div class="location-actions">
+            <a href="https://maps.google.com/?q=4041+Royal+Palm+Ave,+Miami+Beach" target="_blank" class="btn">
+              Open in Maps
+            </a>
+
+            <a href="tel:+13056735483" class="btn btn-outline">
+              Call Now
+            </a>
+          </div>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps?q=4041+Royal+Palm+Ave,+Miami+Beach,+FL&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Tasty Beach Cafe location map">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-kicker">Get in Touch</span>
+      <h2>Contact</h2>
+    </div>
+
+    <div class="grid grid-3 contact-grid">
+      <div class="card contact-card">
+        <div class="contact-icon">💬</div>
+        <h3>WhatsApp</h3>
+        <p>Quick questions, directions or anything you need before stopping by.</p>
+        <a href="https://wa.me/13056735483" target="_blank" class="text-link">Start chat</a>
+      </div>
+
+      <div class="card contact-card">
+        <div class="contact-icon">📞</div>
+        <h3>Call</h3>
+        <p>Reach us directly for updates, timing, and day-to-day information.</p>
+        <a href="tel:+13056735483" class="text-link">+1 305-673-5483</a>
+      </div>
+
+      <div class="card contact-card">
+        <div class="contact-icon">📍</div>
+        <h3>Visit</h3>
+        <p>Come enjoy brunch, coffee, baked goods and the full Tasty Beach vibe.</p>
+        <a href="https://maps.google.com/?q=4041+Royal+Palm+Ave,+Miami+Beach" target="_blank" class="text-link">Open address</a>
+      </div>
+    </div>
   </div>
 </section>
 
 </main>
 
-<script src="script.js"></script>
 <a href="https://maps.google.com/?q=4041+Royal+Palm+Ave,+Miami+Beach"
    target="_blank"
    class="maps-float">
@@ -189,5 +288,7 @@ At Tasty Beach Cafe, our story is one of community and flavor, nestled in the vi
    class="whatsapp-float">
    WhatsApp
 </a>
+
+<script src="script.js"></script>
 </body>
 </html>
