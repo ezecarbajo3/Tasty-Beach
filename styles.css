@@ -638,8 +638,8 @@ main .section:nth-of-type(even) {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 5px;
+  margin-top: calc(90px + 2vh);
+  margin-bottom: 10px;
   position: relative;
   z-index: 2;
 }
