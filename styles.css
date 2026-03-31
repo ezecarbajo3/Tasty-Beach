@@ -413,7 +413,7 @@ main .section:nth-of-type(even) {
 }
 
 #contact.section {
-  padding-top: 60px;   /* ↓ menos espacio = más pegado */
+  padding-top: 40px;   /* ↓ menos espacio = más pegado */
   padding-bottom: 92px; /* opcional mantener aire abajo */
 }
 
