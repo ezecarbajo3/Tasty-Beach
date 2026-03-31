@@ -148,8 +148,8 @@ a {
 .hero-badges {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin: 10px 0;
+  gap: 14px;          /* 🔥 un poco más de separación horizontal */
+  margin: 10px 0 30px; /* 🔥 MÁS espacio abajo → separa de la frase */
   flex-wrap: wrap;
 }
 
