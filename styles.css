@@ -309,11 +309,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 24px;
+  margin: 0 auto 18px;
 }
 
 .hero-logo img {
-  width: min(420px, 48%);
+  width: min(320px, 28vw);
   height: auto;
   object-fit: contain;
   display: block;
