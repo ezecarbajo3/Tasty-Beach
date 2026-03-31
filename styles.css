@@ -95,7 +95,7 @@ a {
 .hero {
   position: relative;
   min-height: auto;
-  padding-top: 220px;
+  padding-top: 205px;
   background:
     linear-gradient(rgba(218, 208, 192, 0.96), rgba(205, 193, 176, 0.98)),
     repeating-linear-gradient(
