@@ -22,7 +22,7 @@ a {
   color: inherit;
 }
 
-/* NAVBAR */
+/* NAVBAR (NO TOCAR) */
 
 .navbar {
   position: fixed;
@@ -93,11 +93,10 @@ a {
   font-size: 1.05rem;
   font-weight: 700;
   color: white;
-  transition: 0.25s ease;
   position: relative;
+  transition: 0.25s ease;
 }
 
-/* 🔥 hover pro tipo underline animado */
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -126,7 +125,11 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 90px 20px 30px;
+  padding: 90px 20px 20px;
+}
+
+.hero-content {
+  max-width: 800px;
 }
 
 .hero-logo img {
@@ -134,103 +137,92 @@ a {
   margin-bottom: 10px;
 }
 
-.hero h1 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 3.6rem;
-  margin: 18px 0 8px;
-}
-
-.hero p {
+.hero-subtitle {
   color: var(--muted);
   font-size: 1.5rem;
-  margin-bottom: 0;
+  margin: 10px 0 15px;
 }
 
-/* BUTTONS */
+/* 🔥 badges hero */
 
-.btn {
+.hero-badges {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.hero-badge {
   background: var(--primary);
   color: white;
-  padding: 14px 28px;
+  padding: 6px 14px;
   border-radius: 999px;
-  display: inline-block;
-  margin-top: 30px;
+  font-size: 0.8rem;
   font-weight: 600;
-  transition: 0.25s ease;
-  border: none;
 }
 
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(255,90,31,0.3);
+/* 🔥 quick info */
+
+.hero-quick-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  flex-wrap: wrap;
 }
 
-/* 🔥 BOTÓN EN FONDO NARANJA */
-
-.section:nth-of-type(even) .btn {
-  background: white;
-  color: var(--primary);
+.quick-info-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: var(--muted);
 }
 
-.section:nth-of-type(even) .btn:hover {
-  background: #f5f5f5;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
-
-/* OUTLINE */
-
-.btn-outline {
-  background: transparent;
-  border: 2px solid var(--primary);
-  color: var(--primary);
-}
-
-.btn-outline:hover {
-  background: var(--primary);
-  color: white;
-}
-
-/* 🔥 OUTLINE EN FONDO NARANJA */
-
-.section:nth-of-type(even) .btn-outline {
-  border: 2px solid white;
-  color: white;
-}
-
-.section:nth-of-type(even) .btn-outline:hover {
-  background: white;
-  color: var(--primary);
-}
-
-/* SECTION BASE */
+/* SECTION */
 
 .section {
-  padding: 90px 20px;
+  padding: 70px 20px; /* 🔥 menos espacio */
 }
 
-/* BLANCO */
+/* HEADINGS */
+
+.section-heading {
+  margin-bottom: 25px;
+}
+
+.section-kicker {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2.3rem;
+  margin: 5px 0 0;
+}
+
+/* COLORS */
 
 .section:nth-of-type(odd) {
   background: white;
   color: var(--text);
 }
 
-/* NARANJA */
-
 .section:nth-of-type(even) {
   background: var(--primary);
   color: white;
 }
 
-.section:nth-of-type(even) p,
 .section:nth-of-type(even) h2,
+.section:nth-of-type(even) p,
 .section:nth-of-type(even) h3 {
   color: white;
 }
 
-.section:nth-of-type(even) p {
-  opacity: 0.9;
-}
 /* CONTAINER */
 
 .container {
@@ -238,18 +230,37 @@ a {
   margin: auto;
 }
 
+/* ABOUT */
+
+.about-grid {
+  display: grid;
+  gap: 25px;
+}
+
+.about-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about-pill {
+  background: var(--primary-soft);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
 /* CARDS */
 
 .card {
   background: white;
   border-radius: 22px;
-  padding: 30px;
-
-  height: 300px; /* 🔥 misma altura que imágenes */
+  padding: 28px;
+  height: 300px;
 
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centra contenido */
+  justify-content: center;
 
   box-shadow: 0 12px 35px rgba(0,0,0,0.06);
   transition: 0.25s ease;
@@ -257,14 +268,11 @@ a {
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.12); /* 🔥 más impacto */
+  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
 }
-
-/* CARDS EN NARANJA */
 
 .section:nth-of-type(even) .card {
   background: rgba(255,255,255,0.14);
-  backdrop-filter: blur(12px);
   border: 1px solid rgba(255,255,255,0.25);
 }
 
@@ -277,13 +285,83 @@ a {
 
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
-  align-items: stretch; /* 🔥 CLAVE para que todo mida igual */
+  align-items: stretch;
+}
+
+/* GALLERY */
+
+.gallery {
+  margin: 30px 0 25px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+  transition: 0.35s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* caption */
+
+.gallery-item figcaption {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+/* MENU */
+
+.menu-card-icon {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.menu-cta {
+  text-align: center;
+  margin-top: 30px;
 }
 
 /* REVIEWS */
 
-.review {
-  font-style: italic;
+.review-card {
+  text-align: left;
+}
+
+.review-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.review-badge {
+  font-size: 0.7rem;
+  background: var(--primary);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 999px;
 }
 
 .stars {
@@ -296,47 +374,109 @@ a {
 
 /* LOCATION */
 
+.location-card {
+  padding: 30px;
+}
+
+.location-info-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.info-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.location-actions {
+  display: flex;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+/* 🔥 FIX MAP SUPERPUESTO */
+
+.map-wrap {
+  margin-top: 10px;
+}
+
 iframe {
   width: 100%;
-  height: 400px;
+  height: 350px;
   border-radius: 20px;
-  margin-top: 20px;
+  border: none;
 }
 
-/* TITLES */
+/* CONTACT */
 
-h2 {
-  font-size: 2.4rem;
-  margin-bottom: 25px;
+.contact-card {
+  text-align: center;
 }
 
-/* 🔥 GALLERY PRO (clave visual) */
-
-.gallery {
-  margin: 40px 0 30px;
+.contact-icon {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
 }
 
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  max-width: 950px;
-  margin: 0 auto;
+.text-link {
+  color: var(--primary);
+  font-weight: 600;
 }
 
-.gallery img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 24px;
-  transition: 0.35s ease;
-  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+/* BUTTONS */
+
+.btn {
+  background: var(--primary);
+  color: white;
+  padding: 12px 26px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: 0.25s ease;
 }
 
-/* 🔥 efecto premium */
-.gallery img:hover {
-  transform: scale(1.05) translateY(-4px);
-  box-shadow: 0 25px 60px rgba(0,0,0,0.18);
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background: transparent;
+}
+
+/* FLOAT BUTTONS */
+
+.whatsapp-float,
+.maps-float {
+  position: fixed;
+  bottom: 20px;
+  z-index: 999;
+
+  padding: 12px 20px;
+  border-radius: 999px;
+
+  font-weight: 600;
+  font-size: 0.9rem;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: 0.25s ease;
+}
+
+.whatsapp-float {
+  right: 20px;
+  background: #25D366;
+  color: #062e16;
+}
+
+.maps-float {
+  left: 20px;
+  background: white;
+  color: #111;
 }
 
 /* RESPONSIVE */
@@ -350,57 +490,11 @@ h2 {
     grid-template-columns: 1fr;
   }
 
-  .hero h1 {
-    font-size: 2.6rem;
-  }
-
   .hero-logo img {
     width: 85%;
   }
-  /* FLOAT BUTTONS */
 
-.whatsapp-float,
-.maps-float {
-  position: fixed;
-  bottom: 24px;
-  z-index: 999;
-
-  padding: 14px 22px;
-  border-radius: 999px;
-
-  font-weight: 600;
-  font-size: 0.95rem;
-
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  transition: 0.25s ease;
-}
-
-/* WHATSAPP (derecha) */
-
-.whatsapp-float {
-  right: 24px;
-  background: #25D366;
-  color: #0a2b14;
-}
-
-.whatsapp-float:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-}
-
-/* MAPS (izquierda) */
-
-.maps-float {
-  left: 24px;
-  background: white;
-  color: #111;
-}
-
-.maps-float:hover {
-  transform: translateY(-3px);
-}
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
 }
