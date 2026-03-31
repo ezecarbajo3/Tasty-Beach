@@ -412,6 +412,11 @@ main .section:nth-of-type(even) {
   color: #4a4039 !important;
 }
 
+#contact.section {
+  padding-top: 60px;   /* ↓ menos espacio = más pegado */
+  padding-bottom: 92px; /* opcional mantener aire abajo */
+}
+
 #location.section {
   background:
     radial-gradient(circle at top, rgba(255, 255, 255, 0.18), transparent 50%),
