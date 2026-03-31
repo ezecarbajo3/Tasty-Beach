@@ -384,16 +384,17 @@ main .section:nth-of-type(even) {
 .menu-images {
   display: flex;
   justify-content: center;
+  align-items: stretch;
   gap: 24px;
-  width: 75%;            /* 3/4 de pantalla */
+  width: 75%;
   margin: 40px auto 24px;
 }
 
 .menu-images img {
-  width: 100%;
-  max-width: 300px;      /* controla tamaño */
-  height: 200px;         /* mismo alto */
-  object-fit: cover;     /* recorte prolijo */
+  flex: 1;                 /* 🔥 clave: las iguala automáticamente */
+  max-width: 320px;        /* límite para que no se agranden de más */
+  height: 220px;           /* misma altura fija */
+  object-fit: cover;
   border-radius: 20px;
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
