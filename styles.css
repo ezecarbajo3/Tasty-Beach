@@ -79,7 +79,7 @@ a {
   letter-spacing: 0.18em;
   font-size: 0.8rem;
   font-weight: 800;
-  color: var(--gold);
+  color: #e86a1f;
 }
 
 .topbar-center {
@@ -97,13 +97,13 @@ a {
   min-height: auto;
   padding-top: 126px;
   background:
-    linear-gradient(rgba(92, 60, 47, 0.96), rgba(74, 47, 37, 0.97)),
+    linear-gradient(rgba(251, 246, 236, 0.96), rgba(245, 238, 226, 0.98)),
     repeating-linear-gradient(
       90deg,
-      rgba(255, 236, 210, 0.02) 0px,
-      rgba(255, 236, 210, 0.02) 2px,
-      rgba(60, 32, 22, 0.035) 2px,
-      rgba(60, 32, 22, 0.035) 10px
+      rgba(255, 255, 255, 0.20) 0px,
+      rgba(255, 255, 255, 0.20) 2px,
+      rgba(230, 216, 196, 0.14) 2px,
+      rgba(230, 216, 196, 0.14) 10px
     );
 }
 
@@ -211,13 +211,13 @@ a {
 }
 
 .btn-gold {
-  background: var(--gold);
-  color: #2d1a12;
-  box-shadow: 0 14px 30px rgba(20, 10, 7, 0.18);
+  background: #e86a1f;
+  color: #fbf6ec;
+  box-shadow: 0 14px 30px rgba(20, 10, 7, 0.14);
 }
 
 .btn-gold:hover {
-  background: var(--gold-strong);
+  background: #d85d18;
   transform: translateY(-1px);
 }
 
@@ -275,13 +275,14 @@ a {
 .hero-content h1 {
   font-size: clamp(4rem, 10vw, 7.6rem);
   text-shadow: none !important;
+  color: #3a312c;
 }
 
 .hero-content h2 {
   margin: 18px 0 0;
   font-size: clamp(1.6rem, 2vw, 2.3rem);
   font-weight: 800;
-  color: var(--gold);
+  color: #e86a1f;
   font-style: italic;
 }
 
@@ -290,7 +291,7 @@ a {
   margin: 20px auto 0;
   font-size: clamp(1.15rem, 1.8vw, 1.45rem);
   line-height: 1.6;
-  color: var(--text);
+  color: #4a4039;
   text-shadow: none !important;
 }
 
