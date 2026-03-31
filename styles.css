@@ -392,6 +392,7 @@ main .section:nth-of-type(even) {
 }
 
 #menu.section {
+  padding-top: 120px; 
   padding-bottom: 56px;
 }
 
