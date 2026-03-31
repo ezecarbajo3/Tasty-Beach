@@ -178,18 +178,20 @@ a {
 .nav-logo {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end; /* 🔥 alineado a la derecha */
   flex-shrink: 0;
 }
 
-/* 🔥 elimina el logo duplicado de abajo a la derecha */
+/* 🔥 elimina el logo duplicado */
 .navbar .nav-logo:last-of-type {
   display: none !important;
 }
 
 .nav-logo img {
-  width: 130px; /* mitad aprox. del tamaño visual que tenía */
-  height: auto;
+  height: 60px;       /* 🔥 tamaño controlado */
+  width: auto;
+  max-width: 100px;   /* 🔥 evita desbordes */
+  object-fit: contain;
   display: block;
 }
 
