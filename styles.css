@@ -182,6 +182,11 @@ a {
   flex-shrink: 0;
 }
 
+/* 🔥 elimina el logo duplicado de abajo a la derecha */
+.navbar .nav-logo:last-of-type {
+  display: none !important;
+}
+
 .nav-logo img {
   width: 130px; /* mitad aprox. del tamaño visual que tenía */
   height: auto;
@@ -892,33 +897,35 @@ main .section:nth-of-type(even) {
   }
 
   /* 🔥 logo arriba a la derecha en la misma línea */
-  .nav-logo,
-  .brand-logo {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-shrink: 0;
-  }
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
 
-  .nav-logo img,
-  .brand-logo img,
-  .brand-logo {
-    width: auto;
-    height: 42px;
-    max-width: 120px;
-    object-fit: contain;
-  }
+/* 🔥 eliminar logo duplicado */
+.brand-logo {
+  display: none !important;
+}
 
-  .nav-links {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 16px 22px;
-    width: 100%;
-  }
+.nav-logo img {
+  width: auto;
+  height: 42px;
+  max-width: 120px;
+  object-fit: contain;
+}
 
-  .nav-links a {
-    font-size: 1rem;
-  }
+.nav-links {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px 22px;
+  width: 100%;
+}
+
+.nav-links a {
+  font-size: 1rem;
+}
 
   .hero-content {
     padding: 40px 0;
