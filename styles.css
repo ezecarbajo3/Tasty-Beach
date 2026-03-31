@@ -499,7 +499,7 @@ main .section:nth-of-type(even) {
 
 .reviews-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
 }
 
@@ -518,6 +518,10 @@ main .section:nth-of-type(even) {
   display: block;
   margin-top: 18px;
   color: var(--gold-strong);
+}
+
+#reviews.section {
+  padding-bottom: 56px;
 }
 
 /* LOCATION */
