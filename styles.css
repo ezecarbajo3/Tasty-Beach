@@ -15,7 +15,7 @@ body {
   background: var(--bg);
 }
 
-/* 🔥 RESET LINKS (CLAVE) */
+/* RESET LINKS */
 
 a {
   text-decoration: none;
@@ -37,7 +37,7 @@ a {
   justify-content: space-between;
   gap: 24px;
 
-  padding: 18px 24px;
+  padding: 16px 24px;
 
   background: linear-gradient(135deg, #3b1f17, #5a2d1f);
   border-radius: 999px;
@@ -55,8 +55,8 @@ a {
 }
 
 .brand-mark {
-  width: 68px;
-  height: 68px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
 
   display: flex;
@@ -64,7 +64,7 @@ a {
   justify-content: center;
 
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   font-weight: 700;
 
   color: white;
@@ -86,13 +86,12 @@ a {
   align-items: center;
   justify-content: center;
   flex: 1;
-  gap: 48px;
+  gap: 42px;
 }
 
 .nav-links a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  letter-spacing: 0.02em;
   color: white;
   transition: 0.25s ease;
 }
@@ -104,29 +103,30 @@ a {
 /* HERO */
 
 .hero {
-  min-height: 100vh;
+  min-height: 85vh; /* 🔥 FIX espacio vacío */
   display: flex;
-  flex-direction: column; /* 🔥 clave para ordenar contenido */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 140px 20px 60px;
+  padding: 120px 20px 40px;
 }
 
 .hero-logo img {
-  width: min(500px, 80%);
-  margin-bottom: 20px;
+  width: min(480px, 75%);
+  margin-bottom: 10px;
 }
 
 .hero h1 {
   font-family: "Cormorant Garamond", serif;
-  font-size: 4rem;
-  margin: 10px 0;
+  font-size: 3.8rem;
+  margin: 20px 0 10px;
 }
 
 .hero p {
   color: var(--muted);
   font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 /* BUTTONS */
@@ -178,8 +178,6 @@ a {
   color: white;
 }
 
-/* TEXTO EN NARANJA */
-
 .section:nth-of-type(even) p,
 .section:nth-of-type(even) h2,
 .section:nth-of-type(even) h3 {
@@ -208,7 +206,7 @@ a {
 }
 
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px); /* 🔥 más premium */
 }
 
 /* CARDS EN NARANJA */
@@ -266,10 +264,10 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* 🔥 GALLERY (AHORA BIEN UBICADA Y PRO) */
+/* GALLERY */
 
 .gallery {
-  margin: 30px 0 10px;
+  margin: 40px 0 20px; /* 🔥 mejor balance */
 }
 
 .gallery-container {
@@ -282,7 +280,7 @@ h2 {
 
 .gallery img {
   width: 100%;
-  height: 260px;
+  height: 250px;
   object-fit: cover;
   border-radius: 22px;
   transition: 0.35s ease;
@@ -290,7 +288,7 @@ h2 {
 }
 
 .gallery img:hover {
-  transform: scale(1.06) rotate(0.5deg);
+  transform: scale(1.07); /* 🔥 limpio */
 }
 
 /* RESPONSIVE */
