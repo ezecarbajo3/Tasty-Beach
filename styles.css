@@ -359,6 +359,12 @@ main .section:nth-of-type(even) {
 #menu.section {
   padding-bottom: 56px;
 }
+.menu-section {
+  background:
+    radial-gradient(circle at top, rgba(255,255,255,0.4), transparent 40%),
+    linear-gradient(180deg, #f4efe6 0%, #e9e0d3 100%) !important;
+}
+
 .card,
 .menu-card,
 .review-card {
