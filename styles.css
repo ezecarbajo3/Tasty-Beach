@@ -369,6 +369,22 @@ main .section:nth-of-type(even) {
     radial-gradient(circle at top, rgba(255,255,255,0.25), transparent 50%),
     linear-gradient(180deg, #efe6d8 0%, #e0d3c2 100%) !important;
 }
+#location.section {
+  background:
+    radial-gradient(circle at top, rgba(255,255,255,0.25), transparent 50%),
+    linear-gradient(180deg, #efe6d8 0%, #e0d3c2 100%) !important;
+}
+#location .eyebrow {
+  color: #e86a1f !important;
+}
+
+#location h2 {
+  color: #4a4039 !important;
+}
+
+#location p {
+  color: #4a4039 !important;
+}
 
 .card,
 .menu-card,
