@@ -361,8 +361,8 @@ main .section:nth-of-type(even) {
 }
 .menu-section {
   background:
-    radial-gradient(circle at top, rgba(255,255,255,0.4), transparent 40%),
-    linear-gradient(180deg, #f4efe6 0%, #e9e0d3 100%) !important;
+    radial-gradient(circle at top, rgba(255,255,255,0.25), transparent 50%),
+    linear-gradient(180deg, #efe6d8 0%, #e0d3c2 100%) !important;
 }
 
 .card,
