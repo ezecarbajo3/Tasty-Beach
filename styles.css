@@ -343,7 +343,9 @@ main .section:nth-of-type(even) {
   grid-template-columns: 1fr;
   align-items: start;
 }
-
+#menu.section {
+  padding-bottom: 56px;
+}
 .card,
 .menu-card,
 .review-card {
