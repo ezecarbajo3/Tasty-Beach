@@ -398,6 +398,7 @@ main .section:nth-of-type(even) {
 
 #reviews.section {
   padding-bottom: 56px;
+  padding-top: 130px;
 }
 
 .menu-section {
@@ -415,6 +416,7 @@ main .section:nth-of-type(even) {
   background:
     radial-gradient(circle at top, rgba(255, 255, 255, 0.18), transparent 50%),
     linear-gradient(180deg, #e2d6c6 0%, #cfc0ab 100%) !important;
+  padding-top: 130px;
 }
 
 #location .eyebrow {
