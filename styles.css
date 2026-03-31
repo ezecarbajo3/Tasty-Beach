@@ -649,8 +649,8 @@ main .section:nth-of-type(even) {
 }
 
 .hero-logo img {
-  width: min(520px, 65%);
-  transform: scale(1.4);
+  width: min(260px, 35%);
+  transform: scale(1);
 }
 
 /* SCROLL REVEAL ANIMATIONS */
