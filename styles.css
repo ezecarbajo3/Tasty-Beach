@@ -95,7 +95,7 @@ a {
 .hero {
   position: relative;
   min-height: auto;
-  padding-top: 126px;
+  padding-top: 220px;
   background:
     linear-gradient(rgba(218, 208, 192, 0.96), rgba(205, 193, 176, 0.98)),
     repeating-linear-gradient(
@@ -123,6 +123,7 @@ a {
   border: 1px solid var(--border);
   border-radius: 999px;
   backdrop-filter: blur(12px);
+  overflow: hidden;
 }
 
 .brand {
@@ -178,19 +179,19 @@ a {
 .nav-logo {
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* 🔥 alineado a la derecha */
+  justify-content: flex-end;
   flex-shrink: 0;
 }
 
-/* 🔥 elimina el logo duplicado */
+/* elimina logo duplicado */
 .navbar .nav-logo:last-of-type {
   display: none !important;
 }
 
 .nav-logo img {
-  height: 60px;       /* 🔥 tamaño controlado */
+  height: 60px;
   width: auto;
-  max-width: 100px;   /* 🔥 evita desbordes */
+  max-width: 100px;
   object-fit: contain;
   display: block;
 }
@@ -291,6 +292,20 @@ a {
   font-weight: 800;
   color: #e86a1f;
   font-style: italic;
+}
+
+.hero-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 24px;
+}
+
+.hero-logo img {
+  width: min(420px, 48%);
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .hero-description {
@@ -857,9 +872,9 @@ main .section:nth-of-type(even) {
     grid-template-columns: 1fr;
   }
 
-  .hero {
-    padding-top: 190px !important;
-  }
+.hero {
+  padding-top: 260px !important;
+}
 
   .navbar {
     top: 14px;
@@ -922,7 +937,6 @@ main .section:nth-of-type(even) {
   flex-shrink: 0;
 }
 
-/* 🔥 eliminar logo duplicado */
 .brand-logo {
   display: none !important;
 }
