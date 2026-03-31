@@ -357,4 +357,50 @@ h2 {
   .hero-logo img {
     width: 85%;
   }
+  /* FLOAT BUTTONS */
+
+.whatsapp-float,
+.maps-float {
+  position: fixed;
+  bottom: 24px;
+  z-index: 999;
+
+  padding: 14px 22px;
+  border-radius: 999px;
+
+  font-weight: 600;
+  font-size: 0.95rem;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: 0.25s ease;
+}
+
+/* WHATSAPP (derecha) */
+
+.whatsapp-float {
+  right: 24px;
+  background: #25D366;
+  color: #0a2b14;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* MAPS (izquierda) */
+
+.maps-float {
+  left: 24px;
+  background: white;
+  color: #111;
+}
+
+.maps-float:hover {
+  transform: translateY(-3px);
+}
 }
