@@ -381,6 +381,30 @@ main .section:nth-of-type(even) {
   color: var(--muted);
 }
 
+.menu-images {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  width: 75%;            /* 3/4 de pantalla */
+  margin: 40px auto 24px;
+}
+
+.menu-images img {
+  width: 100%;
+  max-width: 300px;      /* controla tamaño */
+  height: 200px;         /* mismo alto */
+  object-fit: cover;     /* recorte prolijo */
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-images img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+}
+
 /* ABOUT */
 
 .feature-cards {
