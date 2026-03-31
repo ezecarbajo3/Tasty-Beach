@@ -128,36 +128,42 @@ a {
 .brand {
   display: flex;
   align-items: center;
-  gap: 16px;
-  min-width: 0;
+  gap: 20px;
+  min-width: 240px;
+  flex-shrink: 0;
 }
 
 .brand-mark {
-  width: 74px;
-  height: 74px;
+  width: 78px;
+  height: 78px;
   display: grid;
   place-items: center;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(217, 186, 122, 0.35);
   font-family: "Cormorant Garamond", serif;
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-weight: 700;
+  flex-shrink: 0;
 }
 
 .brand-text {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  justify-content: center;
+  gap: 4px;
+  min-width: 140px;
 }
 
 .brand-text span {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 800;
+  line-height: 1.05;
 }
 
 .brand-text small {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
+  line-height: 1.15;
   color: var(--muted);
 }
 
@@ -166,7 +172,7 @@ a {
   align-items: center;
   justify-content: center;
   flex: 1;
-  gap: 56px;
+  gap: 40px;
   font-weight: 700;
 }
 
