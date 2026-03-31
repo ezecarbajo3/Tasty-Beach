@@ -157,12 +157,27 @@ a {
   margin-top: 30px;
   font-weight: 600;
   transition: 0.25s ease;
+  border: none;
 }
 
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(255,90,31,0.3);
 }
+
+/* 🔥 BOTÓN EN FONDO NARANJA */
+
+.section:nth-of-type(even) .btn {
+  background: white;
+  color: var(--primary);
+}
+
+.section:nth-of-type(even) .btn:hover {
+  background: #f5f5f5;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* OUTLINE */
 
 .btn-outline {
   background: transparent;
@@ -173,6 +188,18 @@ a {
 .btn-outline:hover {
   background: var(--primary);
   color: white;
+}
+
+/* 🔥 OUTLINE EN FONDO NARANJA */
+
+.section:nth-of-type(even) .btn-outline {
+  border: 2px solid white;
+  color: white;
+}
+
+.section:nth-of-type(even) .btn-outline:hover {
+  background: white;
+  color: var(--primary);
 }
 
 /* SECTION BASE */
@@ -204,7 +231,6 @@ a {
 .section:nth-of-type(even) p {
   opacity: 0.9;
 }
-
 /* CONTAINER */
 
 .container {
