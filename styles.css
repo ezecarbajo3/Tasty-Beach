@@ -1102,7 +1102,20 @@ main .section:nth-of-type(even) {
     width: 13px;
     height: 13px;
   }
+  .menu-images {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .menu-images img {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    max-width: 100%;
+  }
 }
+
+
 
 @media (max-width: 640px) {
   .container {
