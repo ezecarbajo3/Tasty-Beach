@@ -704,14 +704,15 @@ main .section:nth-of-type(even) {
 
 .contact-card {
   width: 100%;
+  padding: 22px 20px; /* 🔥 reduce espacio vertical */
 }
 
 .contact-cards-two .contact-card {
-  min-height: 260px;
+  min-height: auto; /* 🔥 elimina altura fija innecesaria */
 }
 
 .contact-card h3 {
-  margin: 10px 0;
+  margin: 8px 0; /* 🔥 menos separación */
   font-size: 1.9rem;
   line-height: 1.15;
 }
