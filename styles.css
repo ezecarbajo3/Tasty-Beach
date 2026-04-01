@@ -987,15 +987,15 @@ main .section:nth-of-type(even) {
 
 /* fila 1 */
 .nav-links a:nth-child(1) {
-  grid-column: 2 / 3; /* About */
+  grid-column: 3 / 4;
 }
 
 .nav-links a:nth-child(2) {
-  grid-column: 3 / 4; /* Menu */
+  grid-column: 4 / 5;
 }
 
 .nav-links a:nth-child(3) {
-  grid-column: 4 / 5; /* Reviews */
+  grid-column: 5 / 6;
 }
 
 /* fila 2 */
